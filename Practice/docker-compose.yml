@@ -1,0 +1,9 @@
+version: "3"
+services:
+  my-node-image-compose:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-node-container-compose
+    ports:
+      - "4001:4000"
